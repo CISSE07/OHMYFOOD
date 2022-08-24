@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&family=Shrikhand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header #logo {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3019607843);
+  position: relative;
+}
+header #localisation {
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  padding: 20px;
+}
+header #localisation p {
+  margin-left: 5px;
+}
+header #reserver {
+  width: -webkit-fill-available;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+header #reserver h1 {
+  font-size: 20px;
+  text-align: center;
+}
+header #reserver p {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0px 15px 0px;
+}
+
+input {
+  border: transparent;
+  border-radius: 17px;
+  padding: 10px;
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1);
+}
+input:hover {
+  transform: scale(1.02);
+  transition: all 0.1s;
+}
+
+.btn_menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+#section1 h2 {
+  padding: 10px 0 0 10px;
+}
+#section1 #fonctionnement {
+  padding: 15px;
+  flex-wrap: wrap;
+  display: flex;
+}
+#section1 #fonctionnement .numero {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 10px 0px;
+}
+#section1 #fonctionnement .numero span {
+  display: flex;
+  justify-content: center;
+  background-color: #9356DC;
+  width: 18px;
+  position: relative;
+  margin-right: -6px;
+  border-radius: 19px;
+  color: #fff;
+  padding: 2px;
+}
+#section1 #fonctionnement .numero .fonctionnement {
+  width: 225px;
+  display: flex;
+  padding: 15px;
+  background-color: #f3f3f3;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+}
+#section1 #fonctionnement .numero .fonctionnement:hover {
+  background-color: #cdbde0;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+}
+#section1 #fonctionnement .numero .fonctionnement p {
+  margin-left: 10px;
+}
+
+#restau {
+  background-color: #f3f3f3;
+}
+#restau h2 {
+  padding: 10px 0 5px 10px;
+}
+
+.resto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.carte_restau {
+  border: 1px solid transparent;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.carte_restau a {
+  text-decoration: none;
+  color: #353535;
+}
+.carte_restau .carte_img {
+  width: auto;
+}
+.carte_restau .carte_img img {
+  width: 100%;
+  height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.carte_restau .racine {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0 0 15px 15px;
+  margin-top: -7px;
+}
+@media screen and (min-width: 1023px) and (max-width: 1438px) {
+  .carte_restau {
+    border: 1px solid transparent;
+    width: 45%;
+    margin: 0px 15px 30px 0px;
+  }
+}
+@media screen and (min-width: 1439px) and (max-width: 1441px) {
+  .carte_restau {
+    border: 1px solid transparent;
+    width: 45%;
+    margin: 0px 15px 30px 0px;
+  }
+}
+@media screen and (min-width: 1442px) and (max-width: 2560px) {
+  .carte_restau {
+    border: 1px solid transparent;
+    width: 45%;
+    margin: 0px 15px 30px 0px;
+  }
+}
+
+.nouveau {
+  position: relative;
+}
+
+.nouveau::before {
+  content: "Nouveau";
+  position: absolute;
+  width: 70px;
+  height: 19px;
+  padding: 5px;
+  text-align: center;
+  background-color: #99E2D0;
+  color: #1b6150;
+  right: 1rem;
+  top: 1rem;
+}
+
+.like {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.like .fas {
+  position: absolute;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.like:hover .fas {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+}
+footer h1 {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Shrikhand", cursive;
+  padding-bottom: 13px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer li {
+  list-style-type: none;
+  padding-bottom: 5px;
+}
+
+.header {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  width: -webkit-fill-available;
+}
+.header i {
+  color: black;
+}
+.header .head_h1 {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+}
+
+.img_sec img {
+  width: -webkit-fill-available;
+}
+@media screen and (min-width: 1442px) and (max-width: 2560px) {
+  .img_sec img {
+    height: 55rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+.titre-principl {
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  background-color: #ffffff;
+  margin-top: -45px;
+  padding: 29px 20px 35px 15px;
+  display: flex;
+  width: -WEBKIT-FILL-AVAILABLE;
+  justify-content: space-between;
+}
+.titre-principl h2 {
+  font-family: "shrikhand", cursive;
+}
+
+.titre {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.titre h2 {
+  font-weight: 300;
+}
+.titre h2::after {
+  content: "";
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #99e2d0;
+  display: flex;
+  margin-top: 5px;
+}
+.titre .list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .titre .list {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 1438px) {
+  .titre .list {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 1439px) and (max-width: 1441px) {
+  .titre .list {
+    width: 33%;
+  }
+}
+@media screen and (min-width: 424px) and (max-width: 766px) {
+  .titre .list {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 1442px) and (max-width: 2560px) {
+  .titre .list {
+    width: 33%;
+  }
+}
+.titre .plat {
+  box-shadow: 7px 1px 34px rgba(104, 103, 103, 0.37);
+  margin: 10px;
+  background: white;
+  border-radius: 15px;
+  font-size: 13px;
+  display: flex;
+  width: -webkit-fill-available;
+  overflow: hidden;
+  -webkit-animation: appear 2s;
+          animation: appear 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  max-width: 100%;
+}
+.titre .plat:hover {
+  cursor: pointer;
+}
+.titre .plat .goku {
+  padding: 15px;
+  width: -webkit-fill-available;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.titre .plat .goku h3 {
+  font-weight: 500;
+}
+.titre .plat .paragraphe-prix {
+  display: flex;
+  justify-content: space-between;
+}
+.titre .plat .paragraphe-prix p:nth-child(2) {
+  font-weight: 500;
+}
+.titre .plat:hover .scheck {
+  margin-right: 0;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+.titre .plat:hover i {
+  -webkit-animation: spin_check 0.7s;
+          animation: spin_check 0.7s;
+}
+
+.scheck {
+  border: 1px solid transparent;
+  border-radius: 0px 10px 10px 0;
+  width: 86px;
+  background-color: #99e2d0;
+  justify-content: center;
+  align-items: center;
+  margin-right: -100px;
+  position: relative;
+}
+.scheck i {
+  padding: 6px;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #99e2d0;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes spin_check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes spin_check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}/*# sourceMappingURL=index.css.map */
